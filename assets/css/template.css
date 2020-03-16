@@ -3354,6 +3354,66 @@ body.off-canvas-cart-open:after {
   .search-form-inner input {
     font-size: 24px;
   }
+
+  .infobox-orange {
+    width: 100% !important;
+    margin-top: 30px !important;
+  }
+
+  .hero-caption-modified {
+    width: 100%;
+  }
+
+  .module-hero-modified {
+    padding: 50px 0 !important;
+    height: auto !important;
+  }
+
+  .blue-heading-cont {
+    flex-direction: column;
+  }
+
+  .blue-heading-cont img {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .blue-heading-cont .blue-heading {
+    order: 2;
+  }
+
+  .hero-caption-modified {
+    width: 100% !important;
+  }
+
+  .blue-heading-cont img {
+    order: 1;
+  }
+
+  .blue-heading {
+    font-size: 30px !important;
+  }
+
+  .heading-strong {
+    font-size: 20px !important;
+  }
+
+  .bigbody {
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
+
+  .howcanwehelpcont,
+  .customerservicecont,
+  .blue-heading-cont {
+    padding: 0 20px !important;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  .infobox-orange {
+    padding: 60px 30px !important;
+  }
 }
 
 /*------------------------------------------------------------------
@@ -3553,6 +3613,21 @@ body.off-canvas-cart-open:after {
   .module-hero {
     height: auto;
     padding: 240px 0;
+  }
+
+  .module-hero-modified {
+    padding: 0;
+    height: 300px;
+  }
+
+  .howcanwehelpcont {
+    display: block;
+    width: 100%;
+  }
+
+  .customerservicecont {
+    display: block;
+    width: 100%;
   }
 }
 
@@ -5664,6 +5739,7 @@ address.map-background {
 .blue-heading-cont {
   display: flex;
   align-items: flex-start;
+  margin-top: 20px;
 }
 
 .heading-icon-cont {
@@ -5709,11 +5785,20 @@ address.map-background {
 .infobox-orange {
   background: #f68824;
   position: relative;
-  padding: 50px;
+  padding: 60px;
+  margin-top: 20px;
+  color: #fff;
+  width: 90%;
+  margin-left: auto;
 }
 
 .infobox-title {
   position: relative;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 5px !important;
+  font-weight: 900;
+  margin-bottom: 40px;
 }
 
 .infobox-title::before {
@@ -5734,6 +5819,24 @@ address.map-background {
   position: relative;
   width: 100%;
   display: block;
-  margin-top: 8px;
+  margin-top: 20px;
   z-index: 1;
+}
+
+.infobox-content {
+  margin-bottom: 20px;
+}
+.infobox-iconcont {
+  display: flex;
+  align-items: center;
+}
+
+.infobox-iconcont img {
+  margin-right: 20px;
+}
+
+.infobox-list-black {
+  display: block;
+  font-size: 20px;
+  color: #222222;
 }
