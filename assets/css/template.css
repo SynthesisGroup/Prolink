@@ -3351,6 +3351,27 @@ body.off-canvas-cart-open:after {
 }
 
 @media (max-width: 768px) {
+  .notif__main {
+    align-items: flex-start;
+  }
+  .notif {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .notif__iconbox {
+    margin-right: 20px !important;
+  }
+
+  .learnmorebtn {
+    font-size: 12px !important;
+    margin-left: 100px;
+  }
+
+  .notif__heading {
+    font-size: 18px !important;
+  }
+
   .search-form-inner input {
     font-size: 24px;
   }
@@ -3413,6 +3434,14 @@ body.off-canvas-cart-open:after {
 @media only screen and (max-width: 411px) {
   .infobox-orange {
     padding: 60px 30px !important;
+  }
+
+  .notif__iconbox {
+    margin-right: 40px !important;
+  }
+
+  .learnmorebtn {
+    margin-left: 110px;
   }
 }
 
@@ -5839,4 +5868,87 @@ address.map-background {
   display: block;
   font-size: 20px;
   color: #222222;
+}
+
+/** NOTIF **/
+
+.notifcont {
+  background: #f68824 url("../images/notif_bg.jpg") no-repeat;
+  /*background: linear-gradient(270deg, #f67024 31.16%, #f68c2c 79.08%),
+    #f68824 url("../images/notif_bg.jpg") no-repeat; */
+  padding: 15px 0;
+  background-size: cover;
+  position: relative;
+}
+
+.notif {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notif__main {
+  display: flex;
+  align-items: center;
+}
+.notif__iconbox {
+  background: green;
+}
+
+.notif__iconbox {
+  position: relative;
+  background: #cb670d;
+  width: 80px;
+  margin-right: 50px;
+  display: flex;
+  padding: 15px;
+  border-radius: 6px;
+  justify-content: center;
+}
+
+.notif__iconbox img {
+  max-width: 40px;
+}
+.notif__iconbox:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-left-color: #cb670d;
+  border-width: 10px;
+  margin-top: -10px;
+}
+
+.notif__heading {
+  color: #fff;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.learnmorebtn {
+  color: #f7953c;
+  text-transform: uppercase;
+  background: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.learnmorebtn:hover {
+  color: #633002 !important;
+}
+
+.covid19notif {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+}
+
+.covid19notif: hover .notifcont {
+  background: blue;
 }
